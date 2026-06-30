@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маг силы — Сильнейшие заклинания</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ───────────── ХЕДЕР ───────────── -->
+        <header class="header">
+            <img src="image/star.png" alt="Маг силы" class="header__logo">
+            <div class="header__right">
+                <span class="header__phone">3222-777-67</span>
+                <a href="" class="btn btn--outline">Написать мастеру</a>
+            </div>
+        </header>
+
+        <!-- ───────────── ГЕРОЙ ───────────── -->
+        <section class="hero">
+            <h1 class="hero__title">Сильнейшие заклинания<br>и помощь в любых делах</h1>
+            <a href="secondary.html" class="btn btn--ritual"></a>
+        </section>
+
+        <!-- ───────────── ДОСТИЖЕНИЕ ───────────── -->
+        <section class="sec-dostigeniye">
+
+            <div class="sec-header">
+                <img src="image/star-small.png" alt="★" class="sec-header__star">
+                <h2 class="sec-header__title">Достижение</h2>
+            </div>
+
+            <!-- строка: карусель + значок 50% рядом (НЕ position:fixed!) -->
+            <div class="dostigeniye__row">
+
+                <div class="dostigeniye__carousel-wrap">
+                    <div class="carousel" id="carousel-services">
+                        <!-- стрелки видны только на мобильном -->
+                        <button class="carousel__arrow" id="sarr-prev-s" aria-label="Назад">&#8249;</button>
+                        <div class="carousel__viewport">
+                            <div class="carousel__track" id="track-s">
+                                <div class="service-card"><span>Любовная магия</span></div>
+                                <div class="service-card"><span>Денежные ритуалы</span></div>
+                                <div class="service-card"><span>Снятие порчи</span></div>
+                                <div class="service-card"><span>Приворот</span></div>
+                                <div class="service-card"><span>Защита от сглаза</span></div>
+                                <div class="service-card"><span>Гадание на Таро</span></div>
+                                <div class="service-card"><span>Чистка ауры</span></div>
+                                <div class="service-card"><span>Отворот</span></div>
+                                <div class="service-card"><span>Рунные ритуалы</span></div>
+                                <div class="service-card"><span>Привлечение удачи</span></div>
+                                <div class="service-card"><span>Исполнение желаний</span></div>
+                                <div class="service-card"><span>Родовые программы</span></div>
+                            </div>
+                        </div>
+                        <button class="carousel__arrow" id="sarr-next-s" aria-label="Вперёд">&#8250;</button>
+                    </div>
+                </div>
+
+                <!-- значок скидки 50% — flex-child, без position:fixed -->
+                <img src="image/skidka.png" alt="50% на обучение" class="skidka">
+
+            </div><!-- /.dostigeniye__row -->
+
+            <div class="pagination" id="pag-s"></div>
+
+        </section><!-- /.sec-dostigeniye -->
+
+        <!-- ───────────── ЗАКЛИНАНИЯ ───────────── -->
+        <section class="sec-zaklin">
+
+            <div class="sec-header">
+                <img src="image/star-small.png" alt="★" class="sec-header__star">
+                <h2 class="sec-header__title">Заклинания</h2>
+            </div>
+
+            <div class="carousel" id="carousel-zaklin">
+                <button class="carousel__arrow" id="sarr-prev-z" aria-label="Назад">&#8249;</button>
+                <div class="carousel__viewport">
+                    <div class="carousel__track" id="track-z">
+                        <div class="tarot-item">
+                            <img src="image/maelstrom.png" class="tarot-item__img" alt="Maelstrom">
+                            <span class="tarot-item__label">Увеличение IQ</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/berserker.png" class="tarot-item__img" alt="Berserker">
+                            <span class="tarot-item__label">Увеличение навыка обращения с оружием</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/heroism.png" class="tarot-item__img" alt="Heroism">
+                            <span class="tarot-item__label">Увеличение прочности</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/wrath.png" class="tarot-item__img" alt="Wrath">
+                            <span class="tarot-item__label">Увеличение силы</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/blue-dragon.jpg" class="tarot-item__img" alt="Blue-dragon">
+                            <span class="tarot-item__label">Ускорение реакции</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/Fair_Card_Back.jpg" class="tarot-item__img" alt="Fair_Card">
+                            <span class="tarot-item__label">Усиление интуиции</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/madnessjpg.jpg" class="tarot-item__img" alt="Madness">
+                            <span class="tarot-item__label">Щит удачи</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/greatness.jpg" class="tarot-item__img" alt="Greatness">
+                            <span class="tarot-item__label">Ярость берсерка</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/death.jpg" class="tarot-item__img" alt="Death">
+                            <span class="tarot-item__label">Героический дух</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/vengeance.jpg" class="tarot-item__img" alt="Vengeance">
+                            <span class="tarot-item__label">Буря хаоса</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/illusion.jpg" class="tarot-item__img" alt="Illusion">
+                            <span class="tarot-item__label">Пламя гнева</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/crusade.jpg" class="tarot-item__img" alt="Crusade">
+                            <span class="tarot-item__label">Клинок берсерка</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/Twisting_Nether_Art.webp" class="tarot-item__img" alt="Twisting Nether">
+                            <span class="tarot-item__label">Гнев богов</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/heroism.png" class="tarot-item__img" alt="Heroism">
+                            <span class="tarot-item__label">Доспехи героя</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/maelstrom.png" class="tarot-item__img" alt="Maelstrom">
+                            <span class="tarot-item__label">Водоворот судьбы</span>
+                        </div>
+                        <div class="tarot-item">
+                            <img src="image/berserker.png" class="tarot-item__img" alt="Berserker">
+                            <span class="tarot-item__label">Неистовый удар</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__arrow" id="sarr-next-z" aria-label="Вперёд">&#8250;</button>
+            </div>
+
+            <div class="pagination" id="pag-z"></div>
+
+        </section><!-- /.sec-zaklin -->
+
+        <!-- ───────────── СОВЕТЫ ОТ МАГА ───────────── -->
+        <section class="sec-sovety">
+            <div class="sovety-card">
+                <div class="sovety-card__label">
+                    Советы<br>от мага
+                </div>
+
+                <div class="sovety-card__img">
+                    <div class="sovety-card__text">
+                        Прислушайтесь к своей интуиции сегодня
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.container -->
+
+    <!-- ───────────── ФУТЕР ───────────── -->
+    <footer class="footer">
+        <div class="footer__left">
+            <!-- <span class="footer__label">Наши соцсети:</span> -->
+            <button class="btn-yt"><img src="image/yt.png" alt="">YouTube</button>
+            <button class="btn-tg"><img src="image/tg.png" alt="">Telegram</button>
+        </div>
+
+        <a href="secondary.html" class="btn-f-ritual"></a>
+        <div class="footer__right">
+            <button class="btn-f-outline">Поддержать</button>
+            <a href="" class="btn-f-outline btn-hide-tablet">Написать мастеру</a>
+        </div>
+    </footer>
+
+    <!-- ───────────── СКРИПТ КАРУСЕЛЕЙ ───────────── -->
+    <script>
+        const ST = {};
+
+        function isMob() { return window.innerWidth < 700; }
+
+        function setupCarousel(id, dpv) {
+            const track = document.getElementById('track-' + id);
+            const viewport = track.parentElement;
+            const pagEl = document.getElementById('pag-' + id);
+            const btnPrev = document.getElementById('sarr-prev-' + id);
+            const btnNext = document.getElementById('sarr-next-' + id);
+
+            const mob = isMob();
+            // На мобильном показываем 1 карточку, на ПК — заданное число (dpv)
+            const pv = mob ? 1 : dpv;
+            const gap = 10;
+            const cw = viewport.offsetWidth;
+
+            /* Вычисляем ширину одной карточки */
+            const iw = pv === 1 ? cw : (cw - gap * (pv - 1)) / pv;
+            Array.from(track.children).forEach(el => {
+                el.style.width = iw + 'px';
+                el.style.minWidth = iw + 'px';
+                el.style.flexShrink = '0';
+            });
+            track.style.gap = gap + 'px';
+
+            /* ДИНАМИЧЕСКИЙ ПОДСЧЕТ СТРАНИЦ */
+            const totalItems = track.children.length;
+            // На мобильном кол-во страниц равно кол-ву карточек, на ПК делим на группы
+            const PAGES = mob ? totalItems : Math.ceil(totalItems / dpv);
+
+            const prev = ST[id]?.cur ?? 0;
+            ST[id] = { cur: Math.min(prev, PAGES - 1), pages: PAGES, cw, gap, mob, dpv };
+
+            /* Строим пагинацию */
+            pagEl.innerHTML = '';
+            const mkBtn = (txt, fn, idx) => {
+                const b = document.createElement('button');
+                b.className = 'pagination__btn';
+                b.textContent = txt;
+                if (idx !== undefined) b.dataset.idx = idx;
+                b.addEventListener('click', fn);
+                pagEl.appendChild(b);
+            };
+
+            mkBtn('‹', () => goPage(id, ST[id].cur - 1));
+            for (let i = 0; i < PAGES; i++) {
+                mkBtn(i + 1, () => goPage(id, i), i);
+            }
+            mkBtn('›', () => goPage(id, ST[id].cur + 1));
+
+            /* Боковые стрелки (внутри карусели) */
+            if (btnPrev) btnPrev.onclick = () => goPage(id, ST[id].cur - 1);
+            if (btnNext) btnNext.onclick = () => goPage(id, ST[id].cur + 1);
+
+            renderCarousel(id);
+        }
+
+        function goPage(id, idx) {
+            const s = ST[id];
+            // Бесконечная прокрутка по кругу
+            s.cur = ((idx % s.pages) + s.pages) % s.pages;
+            renderCarousel(id);
+        }
+
+        function renderCarousel(id) {
+            const s = ST[id];
+            const track = document.getElementById('track-' + id);
+            const pagEl = document.getElementById('pag-' + id);
+
+            /* Шаг прокрутки равен ширине видимой области + 1 отступ */
+            const stride = s.cw + s.gap;
+
+            track.style.transform = `translateX(-${s.cur * stride}px)`;
+
+            pagEl.querySelectorAll('.pagination__btn[data-idx]').forEach(b => {
+                b.classList.toggle('active', +b.dataset.idx === s.cur);
+            });
+        }
+
+        function initCarousels() {
+            setupCarousel('s', 3);  /* Услуги: 3 на странице */
+            setupCarousel('z', 4);  /* Заклинания: 4 на странице */
+        }
+
+        window.addEventListener('load', initCarousels);
+        window.addEventListener('resize', () => requestAnimationFrame(initCarousels));
+    </script>
+
+</body>
+
+</html>

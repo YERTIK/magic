@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маг силы — Заявка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ───────────── ХЕДЕР ФОРМЫ: звезда слева + телефон справа ───────────── -->
+    <div class="form-header">
+        <a href="index.html">
+            <img src="image/star.png" alt="Маг силы" class="form-header__star">
+        </a>
+        <span class="form-header__phone">3222-777-67</span>
+    </div>
+
+    <!-- ───────────── ЗАГОЛОВОК "ЗАЯВКА" ───────────── -->
+    <h1 class="form-zajavka-title">Заявка</h1>
+
+    <!-- ───────────── ФОРМА ───────────── -->
+    <form class="form" onsubmit="handleSubmit(event)">
+
+        <div class="form__row">
+            <label class="form__label" for="f-name">ФИО</label>
+            <input
+                id="f-name"
+                type="text"
+                class="form__input"
+                placeholder="Например: Филатов Сергей Дмитриевич">
+        </div>
+
+        <div class="form__row">
+            <label class="form__label" for="f-phone">Телефон</label>
+            <input
+                id="f-phone"
+                type="tel"
+                class="form__input"
+                placeholder="Например: Филатов Сергей Дмитриевич">
+        </div>
+
+        <div class="form__row">
+            <label class="form__label" for="f-email">Почта</label>
+            <input
+                id="f-email"
+                type="email"
+                class="form__input"
+                placeholder="Например: Филатов Сергей Дмитриевич">
+        </div>
+
+        <div class="form__row">
+            <label class="form__label" for="f-type">Тип услуги</label>
+            <select id="f-type" class="form__select">
+                <option>Приворот</option>
+                <option>Отворот</option>
+                <option>Денежный ритуал</option>
+                <option>Снятие порчи</option>
+                <option>Любовная магия</option>
+                <option>Чистка ауры</option>
+                <option>Гадание на Таро</option>
+                <option>Рунные ритуалы</option>
+                <option>Другое</option>
+            </select>
+        </div>
+
+        <div class="form__row">
+            <label class="form__label" for="f-desc">Описание</label>
+            <textarea id="f-desc" class="form__textarea"></textarea>
+        </div>
+
+        <div class="form__submit-row">
+            <span class="form__call-text">Мы позвоним вам</span>
+            <button type="submit" class="btn-submit">Отправить</button>
+        </div>
+
+        <p class="form__disclaimer">
+            Нажимая «Отправить», вы соглашаетесь с политикой конфиденциальности
+        </p>
+
+    </form>
+
+</div><!-- /.container -->
+
+<!-- ───────────── ФУТЕР ФОРМЫ ───────────── -->
+<footer class="form-footer">
+    <div class="footer__left">
+        <button class="btn-yt"><img src="image/yt.png" alt="">YouTube</button>
+        <button class="btn-tg"><img src="image/tg.png" alt="">Telegram</button>
+    </div>
+    <div class="footer__right">
+        <button class="btn-f-outline">Поддержать</button>
+    </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('[type=submit]');
+    btn.textContent = 'Отправлено ✓';
+    btn.disabled = true;
+    btn.style.borderColor = '#4caf50';
+    btn.style.color = '#4caf50';
+}
+</script>
+
+</body>
+</html>
